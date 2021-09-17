@@ -1,16 +1,18 @@
 <script setup>
 import { ref } from 'vue'
+import login from '@/pages/login.vue'
+import home from '@/pages/home.vue'
 
 defineProps({
   msg: String
 })
 
-const count = ref(0)
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-
+  <login />
+  <home />
   <div class="test-style">
     <p>测试scss</p>
   </div>
@@ -19,8 +21,8 @@ const count = ref(0)
 
 <style scoped lang="scss">
 .test-style {
-  p{
-    color:red
+  p {
+    color: red;
   }
 }
 </style>
