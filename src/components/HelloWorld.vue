@@ -11,8 +11,6 @@ defineProps({
 
 <template>
   <h1>{{ msg }}</h1>
-  <login />
-  <home />
   <div class="test-style">
     <p>测试scss</p>
   </div>

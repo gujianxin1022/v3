@@ -1,13 +1,17 @@
 <script setup>
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <HelloWorld msg="Vue 3 + Vite" />
+  <ul>
+    <li>
+      <router-link to="/login">login</router-link>
+    </li>
+    <li>
+      <router-link to="/home">home</router-link>
+    </li>
+  </ul>
+  <router-view></router-view>
 </template>
-
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
