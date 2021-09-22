@@ -4,7 +4,6 @@ import App from './App.vue'
 import ElementPlus from 'element-plus'
 import 'element-plus/dist/index.css'
 
-console.log('ElementLocale')
 import i18n from '@/assets/locales';
 
 import router from '@/router'

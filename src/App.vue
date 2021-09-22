@@ -1,6 +1,7 @@
 <script>
 import { ElConfigProvider } from 'element-plus'
-import zhCn from 'element-plus/lib/locale/lang/zh-cn'
+import i18n from '@/assets/locales';
+
 export default {
   components: {
     [ElConfigProvider.name]: ElConfigProvider
@@ -8,7 +9,7 @@ export default {
   
   data() {
     return {
-      locale: zhCn
+      locale: i18n,      
     }
   }
 }
@@ -16,7 +17,7 @@ export default {
 </script>
 
 <template>
-  <el-config-provider :locale="locale">
+  <el-config-provider :locale="locale.global.messages[locale.global.locale]">
     <ul>
       <li>
         <router-link to="/login">login</router-link>

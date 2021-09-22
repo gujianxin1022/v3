@@ -1,4 +1,4 @@
-import { createI18n } from 'vue-i18n';
+import { createI18n } from 'vue-i18n/index';
 import elementlangEn from 'element-plus/lib/locale/lang/en';
 import elementlangZhCn from 'element-plus/lib/locale/lang/zh-cn';
 import localeLangEn from './en.json';
